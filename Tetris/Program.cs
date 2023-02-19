@@ -10,7 +10,23 @@ namespace Tetris
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!!!");
+            Console.SetWindowSize(40,30);
+            Console.SetBufferSize(40,30);
+
+            int x1 = 3;
+            int y1 = 2;
+            char c1 = '*';
+
+            Draw(x1,y1,c1);
+
+
+            Console.ReadLine();
+        }
+
+        static void Draw(int x,int y, char c)
+        {
+            Console.SetCursorPosition(x, y);
+            Console.Write(c);
         }
     }
 }
